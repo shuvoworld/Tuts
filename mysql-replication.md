@@ -1,4 +1,5 @@
 # Mysql Server Replication
+
 ## Master Server Setup (ubuntu)
 
 ### Command (terminal one)
@@ -8,22 +9,22 @@
 	apt-get install mysql-server mysql-client
 	nano /etc/mysql/my.cnf
 
-### Edit the lines
+### Edit these lines
 
 	bind-address            = 127.0.0.1
-	into
+	*into*
 	bind-address            = master.server.ip.address
 
 	#server-id               = 1
-	into
+	*into*
 	server-id               = 1
 
 	#log_bin                 = /var/log/mysql/mysql-bin.log
-	into
+	*into*
 	log_bin                 = /var/log/mysql/mysql-bin.log
 
 	#binlog_do_db            = newdatabase
-	into
+	*into*
 	binlog_do_db            = your_database_name
 
 ### command (terminal one)
@@ -42,7 +43,7 @@ note the values of File and Position after the command `show master status` it w
 
 keep terminal one open and open a new terminal and ssh to server
 
-### command (terminal tow)
+### command (terminal two)
 
 	mysqldump -u root -p your_database_name > your_database_name.sql
 	scp your_database_name.sql root@slave.server.ip.address:\root\
