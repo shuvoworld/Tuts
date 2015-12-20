@@ -34,17 +34,12 @@ appServerDir = /usr/local/tomcat7
 
 change ident to trust
 
-	service postgresql start
+	service postgresql restart
 
 change hostname to localhost
 
 	hostname localhost
-	nano /etc/localhost 
-
-(and put localhost)
-
 	./js-install-ce.sh
-
 	cd /usr/local/tomcat7/bin
 
 shutdown and start
