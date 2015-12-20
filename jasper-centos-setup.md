@@ -34,6 +34,8 @@ appServerDir = /usr/local/tomcat7
 
 change ident to trust
 
+	service postgresql start
+
 change hostname to localhost
 
 	hostname localhost
