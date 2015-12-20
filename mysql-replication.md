@@ -60,6 +60,7 @@ keep terminal one open and open a new terminal and ssh to server
 
 	unlock tables;
 	exit;
+	exit;
 
 ## Slave Server Setup (ubuntu)
 
