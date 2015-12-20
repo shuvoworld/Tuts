@@ -15,16 +15,19 @@
 into
 
 	bind-address            = master.server.ip.address
+then
 
 	#server-id               = 1
 into
 
 	server-id               = 1
+then
 
 	#log_bin                 = /var/log/mysql/mysql-bin.log
 into
 
 	log_bin                 = /var/log/mysql/mysql-bin.log
+then
 
 	#binlog_do_db            = newdatabase
 into
@@ -74,23 +77,32 @@ keep terminal one open and open a new terminal and ssh to server
 ### Edit the lines
 
 	bind-address            = 127.0.0.1
-	into
+into
+
 	bind-address            = slave.server.ip.address
+then
 
 	#server-id               = 1
-	into
+into
+
 	server-id               = 2
+then
 
 	#log_bin                 = /var/log/mysql/mysql-bin.log
-	into
+into
+
 	log_bin                 = /var/log/mysql/mysql-bin.log
+then
 
 	#relay-log               = /var/log/mysql/mysql-relay-bin.log
-	into
+into
+
 	relay-log               = /var/log/mysql/mysql-relay-bin.log
+then
 
 	#binlog_do_db            = newdatabase
-	into
+into
+
 	binlog_do_db            = your_database_name
 
 ### Command (terminal one)
