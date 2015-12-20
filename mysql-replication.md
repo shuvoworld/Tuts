@@ -12,19 +12,19 @@
 ### Edit these lines
 
 	bind-address            = 127.0.0.1
-	*into*
+into
 	bind-address            = master.server.ip.address
 
 	#server-id               = 1
-	*into*
+into
 	server-id               = 1
 
 	#log_bin                 = /var/log/mysql/mysql-bin.log
-	*into*
+into
 	log_bin                 = /var/log/mysql/mysql-bin.log
 
 	#binlog_do_db            = newdatabase
-	*into*
+into
 	binlog_do_db            = your_database_name
 
 ### command (terminal one)
