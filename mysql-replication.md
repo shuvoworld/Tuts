@@ -1,12 +1,10 @@
 # Mysql Server Replication
 
-## Master Server Setup (ubuntu)
+## Master Server Setup (ubuntu - assuming mysql is already installed)
 
 ### Command (terminal one)
 
 	ssh root@maseter.server.ip.address
-	apt-get update
-	apt-get install mysql-server mysql-client
 	nano /etc/mysql/my.cnf
 
 ### Edit these lines
