@@ -112,7 +112,7 @@ into
 	mysql -u root -p
 	CHANGE MASTER TO MASTER_HOST='master.server.ip.address',MASTER_USER='slave', MASTER_PASSWORD='slavepassword', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=  107;
 
-note enter the logfile name and pos value according to the values noted before after running show master status command
+*Note:* enter the logfile name and pos value according to the values noted before after running show master status command
 
 	start slave;
 	show slave status\G;
