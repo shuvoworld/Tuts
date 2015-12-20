@@ -13,18 +13,22 @@
 
 	bind-address            = 127.0.0.1
 into
+
 	bind-address            = master.server.ip.address
 
 	#server-id               = 1
 into
+
 	server-id               = 1
 
 	#log_bin                 = /var/log/mysql/mysql-bin.log
 into
+
 	log_bin                 = /var/log/mysql/mysql-bin.log
 
 	#binlog_do_db            = newdatabase
 into
+
 	binlog_do_db            = your_database_name
 
 ### command (terminal one)
