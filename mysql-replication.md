@@ -117,4 +117,7 @@ into
 
 Done!
 
+#For centOS
+There are some variation in file path for log. This has been updated in hrm-sso.dghs.gov.bd and hrm-reporting.dghs.gov.bd 's server.
+
 
